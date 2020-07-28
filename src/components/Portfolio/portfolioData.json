@@ -1,0 +1,38 @@
+[
+    {
+        "projectname": "OpenText Records Management Dashboard",
+        "roledate": "Software Developer, May - August 2018, 2019",
+        "location": "Ottawa, ON",
+        "description":"OpenText is an EIM (Enterprise Information Management) company, managing data for many large corporations. One of the challenges being faced as more data is collected is how to realize it. During my time at OpenText, we built out a Records Management dashboard which is designed to allow customers to view their data through interactive visualizations and determine key insights. The dashboard was implemented on OT cloud platform LEAP, backed by Java Springboot and built with NodeJS and D3JS.",
+        "image":"otlogo.jpg"
+    },
+    {
+        "projectname": "Servus",
+        "roledate": "Capstone Project, 2018 -2019",
+        "location": "University of Ottawa",
+        "description":"Servus was developed over the span of one year for my Software Engineering Capstone project. Servus is a peer to peer residential services application which orchestrates the offering and purchasing of common services such as cleaning, lawn maintenance, snow removal, etc. It is composed of two seperate applications, one for buyers and one for sellers. The applications were built in React-Native, backed by Firebase Cloud Messaging, MySQL, NodeJS and Stripe.",
+        "image":"servus.PNG"
+    },
+    {
+        "projectname": "Wedding Platform",
+        "roledate": "Personal, 2020",
+        "location": "Newmarket, ON",
+        "description":"This application is a re-usable, wedding templated website built in React. This website is still in the works, but it does (or will) support a count down timer, a RSVP system and a gift registry.",
+        "image":"weddingsite.PNG"
+    },
+    {
+        "projectname": "Not Hot Dog",
+        "roledate": "Personal, 2019",
+        "location": "University of Ottawa",
+        "description":"Not Hot Dog is a React-Native based application which whos name was inspired from Silicon Valley S04E04. The application interfaces with IBM Watson AI food recognition to determine the food on your plate from a photo. This information is then parsed and information about the food is given such as calories and carbohydrates. The application is currently a working prototype of what it could become.",
+        "image":"hot-dog.jpg"
+    },
+    {
+        "projectname": "oDocs",
+        "roledate": "Personal, 2020",
+        "location": "Newmarket, ON",
+        "description":"oDocs is a general documentation resource that I have begun to create. Programatically, it is nothing to show off, however it is a great spot to take notes as I learn new concepts and tricks. It is hosted with ReadTheDocs and gives me quick access to anything I may need to reference. I could always just google the documentation I need, but this way helps me to memorize concepts and only keep the things that are relevant to what I am working on!",
+        "image":"rtd.jpg"
+    }            
+
+]
