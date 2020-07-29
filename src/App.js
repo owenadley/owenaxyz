@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import './App.scss';
 import SocialIcon from './components/SocialIcon.js';
 import Portfolio from './components/Portfolio/Portfolio.js';
@@ -10,6 +10,10 @@ function App() {
   const scrollTo = (ref) => window.scrollTo(0, ref.current.offsetTop);
   const scrollRef = useRef(null);
   const executeScroll = () => scrollTo(scrollRef);
+
+  useEffect(() => {
+    document.title = "Owen Adley";
+  });
 
   return (
 
