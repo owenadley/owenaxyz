@@ -4,37 +4,28 @@ import Portfolio from './components/Portfolio/Portfolio.js';
 import Header from './components/Header.js';
 import About from './components/About.js';
 
-class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    // create ref to about section for scroll on button click
-    this.scrollRef = React.createRef(null);
-  }
+function App() {
 
 
-  componentDidMount() {
+  useEffect(() => {
     document.title = "Owen Adley";
-  }
+  });
 
-  scrollTo = (ref) => window.scrollTo(0, ref.current.offsetTop);
-  executeScroll = () => this.scrollTo(this.scrollRef);
+  const scrollRef = React.useRef(null);
+  const scrollTo = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const executeScroll = () => scrollTo(scrollRef);
 
-  render() {
+  return (
 
-    
-    return (
+    <div className="App">    
+        <Header executeScroll={executeScroll}/>
+        <About ref={scrollRef}/>
+        <div className="linebreak"/>
+        <Portfolio/>
+    </div>
 
-      <div className="App">    
-          <Header executeScroll={this.executeScroll}/>
-          <About ref={this.scrollRef}/>
-          <div className="linebreak"/>
-          <Portfolio/>
-      </div>
-
-    );
-  }
+  );
+  
 }
 
 export default App;
