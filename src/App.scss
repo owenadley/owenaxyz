@@ -122,6 +122,9 @@ header {
       }
     }
 
+    #social-4 {
+      animation: animated-button 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 4.5s  forwards; 
+    }
     #social-3 {
       animation: animated-button 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 4s  forwards; 
     }

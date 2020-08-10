@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialIcon from './SocialIcon';
+import Resume from './../assets/OwenAdley-Resume.pdf';
 
 function Header(props) {
 
@@ -16,6 +17,7 @@ function Header(props) {
             
             <div className="social-profiles">
 
+                <SocialIcon order='4' icon='cv' url={Resume}/>
                 <SocialIcon order='3' icon='linkedin' url='https://www.linkedin.com/in/owenadley/'/>
                 <SocialIcon order='2' icon='github' url='https://github.com/owenadley'/>
                 <SocialIcon order='1' icon='mail' url='mailto:owen.adley@gmail.com'/>                        

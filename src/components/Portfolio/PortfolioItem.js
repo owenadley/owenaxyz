@@ -2,13 +2,21 @@ import React from 'react';
 
 function PortfolioItem(props) {
 
-  var imgsrc = `/images/${props.image}`;
+  // construct image source url
+  let imgsrc = `/images/${props.image}`;
+  let isLink = props.link.length > 0;
 
   return (
 
       <div className="portfolio-item">
         <div className="portfolio-item-img">
-          <img src={imgsrc}/>
+          {isLink ? 
+            <a rel="noopener noreferrer" href={props.link} target="_blank">
+              <img alt={props.name} src={imgsrc}/>
+            </a>
+          :
+            <img alt={props.name} src={imgsrc}/>
+          }
         </div>
         <div className="portfolio-item-info">
           <h2>{props.name}</h2>
